@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Proyectil : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float speed;
+
     void Start()
     {
         
@@ -13,6 +14,7 @@ public class Proyectil : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(new Vector3(0, 0, 1)*speed* Time.deltaTime);
+
     }
 }
