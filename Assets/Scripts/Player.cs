@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        
+        Instrucciones();
     }
 
     // Update is called once per frame
@@ -56,6 +56,10 @@ public class Player : MonoBehaviour
         }
     }
 
+    void Instrucciones()
+    {
+        Debug.Log("Presiona la tecla Espacio para aumentar el tamaño de tus balas");
+    }
    
 
 
