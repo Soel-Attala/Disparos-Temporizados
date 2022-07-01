@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
     public float hor;
     public float ver;
     public float speed;
+    public GameObject proyectilPrefab;
+
+
     void Start()
     {
         
@@ -16,6 +19,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         MovimientoJugador();
+        Shoot();
     }
 
     void MovimientoJugador()
@@ -24,7 +28,15 @@ public class Player : MonoBehaviour
         ver = Input.GetAxis("Vertical");
 
         transform.Translate(new Vector3(hor, 0, ver) * speed * Time.deltaTime);
-
-
     }
+
+    void Shoot()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Instantiate(proyectilPrefab, transform.position, transform.rotation);
+        }
+    }
+
+
 }
