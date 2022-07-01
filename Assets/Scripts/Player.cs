@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
     public float hor;
     public float ver;
     public float speed;
+    public float tiempo = 3f;
+    public float tiempoRestante;
+
     public GameObject proyectilPrefab;
 
 
@@ -19,7 +22,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         MovimientoJugador();
-        Shoot();
+        Temporizador();
     }
 
     void MovimientoJugador()
@@ -31,12 +34,32 @@ public class Player : MonoBehaviour
     }
 
     void Shoot()
+    { 
+       
+        
+        Instantiate(proyectilPrefab, transform.position, transform.rotation);
+        
+          
+    }
+
+    void Reload()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        tiempoRestante = tiempo;
+    }
+
+    void Temporizador()
+    {
+        tiempoRestante -= Time.deltaTime;
+        if(tiempoRestante <= 0)
         {
-            Instantiate(proyectilPrefab, transform.position, transform.rotation);
+            Shoot();
+            Reload();
         }
     }
+
+
+
+
 
 
 }
