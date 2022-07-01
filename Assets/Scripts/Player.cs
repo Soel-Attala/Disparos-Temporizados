@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public float speed;
     public float tiempo = 3f;
     public float tiempoRestante;
+    
 
     public GameObject proyectilPrefab;
 
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
     {
         MovimientoJugador();
         Temporizador();
+
+        
     }
 
     void MovimientoJugador()
@@ -35,11 +38,7 @@ public class Player : MonoBehaviour
 
     void Shoot()
     { 
-       
-        
         Instantiate(proyectilPrefab, transform.position, transform.rotation);
-        
-          
     }
 
     void Reload()
@@ -56,6 +55,8 @@ public class Player : MonoBehaviour
             Reload();
         }
     }
+
+   
 
 
 

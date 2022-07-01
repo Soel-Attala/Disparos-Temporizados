@@ -213,8 +213,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367518011}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.8, y: 5, z: 45.4}
-  m_LocalScale: {x: 3, y: 10, z: 90}
+  m_LocalPosition: {x: 84.6, y: 5, z: 101.1}
+  m_LocalScale: {x: 3, y: 20, z: 200}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -349,6 +349,8 @@ MonoBehaviour:
   hor: 0
   ver: 0
   speed: 50
+  tiempo: 3
+  tiempoRestante: 0
   proyectilPrefab: {fileID: 8174291492858262317, guid: 569f1a43719626f4cb3fdd619b6f1cc3, type: 3}
 --- !u!65 &816472463
 BoxCollider:
@@ -421,7 +423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816472461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.4, y: 3, z: 22.8}
+  m_LocalPosition: {x: 45.4, y: 3, z: 11.89}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -681,8 +683,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998657869}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 46.2, y: 5, z: 81.3}
-  m_LocalScale: {x: 3, y: 10, z: 75}
+  m_LocalPosition: {x: 46.2, y: 5, z: 177.3}
+  m_LocalScale: {x: 3, y: 20, z: 75}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
